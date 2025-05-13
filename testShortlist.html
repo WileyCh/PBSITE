@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=League+Gothic&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--Header Styling-->
+
+    <!--Content Styling-->
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      .category {
+        background-color: rgb(252, 232, 208);
+        padding: 20px;
+        border-radius: 25px;
+        margin-top: 0px;
+        margin-left: 20px;
+        margin-bottom: 30px;
+        margin-right: 20px;
+        display: flex;
+        overflow-x: scroll;
+        position: relative;
+        width: fit-content;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+          rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+        border: 1px solid rgb(250, 201, 141);
+      }
+
+      .category:hover {
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+          rgba(0, 0, 0, 0.22) 0px 10px 10px;
+      }
+
+      .category-title h1 {
+        font-family: "arial", sans-serif;
+        font-size: 32px;
+      }
+
+      img.game-logo {
+        width: 200px;
+        height: 100px;
+        object-fit: contain;
+      }
+
+      .subcategory {
+        display: inline-block;
+        text-align: center;
+        height: auto;
+        min-width: 200px;
+        width: 200px;
+        margin-left: 60px;
+        margin-top: 0px;
+      }
+
+      .subcategory-design {
+        height: 75px;
+        display: block;
+        position: relative;
+      }
+
+      .subcategory-design img {
+        height: 50px;
+
+        position: relative;
+        top: 12.5px;
+      }
+      .category-title {
+        display: inline-block;
+        vertical-align: top;
+        width: 175px;
+        text-align: center;
+      }
+
+      .category-title img {
+        justify-self: center;
+        width: 75px;
+        z-index: 1;
+        position: absolute;
+        left: 70px;
+      }
+
+      .category-design {
+        position: absolute;
+        width: 50px;
+        height: 119px;
+        left: 82.5px;
+        top: 151px;
+        z-index: 1;
+      }
+
+      .category-design-horizontal {
+        position: absolute;
+        height: 50px;
+        width: calc(100% - 250px);
+        top: 269px;
+        left: 131.5px;
+      }
+      .category-design-curve {
+        position: absolute;
+        height: 100px;
+        width: 100px;
+        border-radius: 100%;
+        clip-path: polygon(0 50%, 50% 50%, 50% 100%, 0% 100%);
+        top: 219px;
+        left: 82.5px;
+      }
+      .geography-design {
+        background-color: #377eb8;
+      }
+
+      .film-design {
+        background-color: #e41a1c;
+      }
+
+      .category h2 {
+        margin: 0;
+      }
+
+      .category h3 {
+        margin: 0;
+      }
+
+      .category p {
+        margin: 0;
+        height: 111px;
+        width: auto;
+      }
+
+      .subcategory img[src*="Stop icon.png"] {
+        transition-duration: 0.5s;
+        transition-timing-function: ease-in-out;
+      }
+      .subcategory:hover img[src*="Stop icon.png"] {
+        scale: 1.2;
+        transition-duration: 0.5s;
+        transition-timing-function: ease-in-out;
+      }
+
+      .subcategory-design-bar {
+        width: 260px;
+        position: absolute;
+        height: 50px;
+        background-color: #e41a1c;
+        top: 12.5px;
+        right: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="category-holder" id="geography">
+      <div class="category">
+        <div class="subcategory">
+          <img class="game-logo" src="assets/timegussr-logo.svg" alt="" />
+
+          <h3>TimeGussr</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum
+            deleniti a voluptates assumenda animi doloremque nemo quo distinctio
+            facilis eaque?
+          </p>
+          <div class="subcategory-design">
+            <div class="subcategory-design-bar"></div>
+            <img src="assets/Stop icon.png" alt="" />
+          </div>
+          <h2>Best in Class</h2>
+        </div>
+        <div class="subcategory">
+            <img class="game-logo" src="assets/timegussr-logo.svg" alt="" />
+  
+            <h3>TimeGussr</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum
+              deleniti a voluptates assumenda animi doloremque nemo quo distinctio
+              facilis eaque?
+            </p>
+            <div class="subcategory-design">
+              <div class="subcategory-design-bar"></div>
+              <img src="assets/Stop icon.png" alt="" />
+            </div>
+            <h2>Best in Class</h2>
+          </div>
+          <div class="subcategory">
+            <img class="game-logo" src="assets/timegussr-logo.svg" alt="" />
+  
+            <h3>TimeGussr</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum
+              deleniti a voluptates assumenda animi doloremque nemo quo distinctio
+              facilis eaque?
+            </p>
+            <div class="subcategory-design">
+              <div class="subcategory-design-bar"></div>
+              <img src="assets/Stop icon.png" alt="" />
+            </div>
+            <h2>Best in Class</h2>
+          </div>
+      </div>
+    </div>
+
+    <div class="category-holder" id="geography">
+      <div class="category">
+        <div class="subcategory">
+          <img class="game-logo" src="assets/timegussr-logo.svg" alt="" />
+
+          <h3>TimeGussr</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum
+            deleniti a voluptates assumenda animi doloremque nemo quo distinctio
+            facilis eaque?
+          </p>
+          <h2>Best in Class</h2>
+          <div class="subcategory-design">
+            <div class="subcategory-design-bar"></div>
+            <img src="assets/Stop icon.png" alt="" />
+          </div>
+        </div>
+        <div class="subcategory">
+            <img class="game-logo" src="assets/timegussr-logo.svg" alt="" />
+  
+            <h3>TimeGussr</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum
+              deleniti a voluptates assumenda animi doloremque nemo quo distinctio
+              facilis eaque?
+            </p>
+            <h2>Best in Class</h2>
+            <div class="subcategory-design">
+              <div class="subcategory-design-bar"></div>
+              <img src="assets/Stop icon.png" alt="" />
+            </div>
+          </div>
+          <div class="subcategory">
+            <img class="game-logo" src="assets/timegussr-logo.svg" alt="" />
+  
+            <h3>TimeGussr</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum
+              deleniti a voluptates assumenda animi doloremque nemo quo distinctio
+              facilis eaque?
+            </p>
+            <h2>Best in Class</h2>
+            <div class="subcategory-design">
+              <div class="subcategory-design-bar"></div>
+              <img src="assets/Stop icon.png" alt="" />
+            </div>
+          </div>
+      </div>
+    </div>
+    <div class="category-holder" id="geography">
+      <div class="category">
+        <div class="subcategory">
+          <img class="game-logo" src="assets/timegussr-logo.svg" alt="" />
+          <h2>Best in Class</h2>
+          <div class="subcategory-design">
+            <div class="subcategory-design-bar"></div>
+            <img src="assets/Stop icon.png" alt="" />
+          </div>
+          <h3>TimeGussr</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum
+            deleniti a voluptates assumenda animi doloremque nemo quo distinctio
+            facilis eaque?
+          </p>
+        </div>
+        <div class="subcategory">
+            <img class="game-logo" src="assets/timegussr-logo.svg" alt="" />
+            <h2>Best in Class</h2>
+            <div class="subcategory-design">
+              <div class="subcategory-design-bar"></div>
+              <img src="assets/Stop icon.png" alt="" />
+            </div>
+            <h3>TimeGussr</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum
+              deleniti a voluptates assumenda animi doloremque nemo quo distinctio
+              facilis eaque?
+            </p>
+          </div>
+          <div class="subcategory">
+            <img class="game-logo" src="assets/timegussr-logo.svg" alt="" />
+            <h2>Best in Class</h2>
+            <div class="subcategory-design">
+              <div class="subcategory-design-bar"></div>
+              <img src="assets/Stop icon.png" alt="" />
+            </div>
+            <h3>TimeGussr</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum
+              deleniti a voluptates assumenda animi doloremque nemo quo distinctio
+              facilis eaque?
+            </p>
+          </div>
+      </div>
+    </div>
+
+    <div class="category-holder" id="geography">
+        <div class="category">
+         
+          <div class="subcategory">
+            <img class="game-logo" src="assets/timegussr-logo.svg" alt="" />
+
+            <h3>Best in Class</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum
+              deleniti a voluptates assumenda animi doloremque nemo quo
+              distinctio facilis eaque?
+            </p>
+            <div class="subcategory-design">
+              <div class="subcategory-design-bar"></div><img src="assets/Stop icon.png" alt=""/>
+              
+            </div>
+            <h2>TimeGussr</h2>
+          </div>
+          <div class="subcategory">
+            <img class="game-logo" src="assets/timegussr-logo.svg" alt="" />
+
+            <h3>Best in Class</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum
+              deleniti a voluptates assumenda animi doloremque nemo quo
+              distinctio facilis eaque?
+            </p>
+            <div class="subcategory-design">
+              <div class="subcategory-design-bar"></div><img src="assets/Stop icon.png" alt=""/>
+              
+            </div>
+            <h2>TimeGussr</h2>
+          </div>
+          <div class="subcategory">
+            <img class="game-logo" src="assets/timegussr-logo.svg" alt="" />
+
+            <h3>Best in Class</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum
+              deleniti a voluptates assumenda animi doloremque nemo quo
+              distinctio facilis eaque?
+            </p>
+            <div class="subcategory-design">
+              <div class="subcategory-design-bar"></div><img src="assets/Stop icon.png" alt=""/>
+              
+            </div>
+            <h2>TimeGussr</h2>
+          </div>
+         
+        </div>
+      </div>
+      <div class="category-holder" id="geography">
+        <div class="category">
+         
+          <div class="subcategory">
+            <img class="game-logo" src="assets/timegussr-logo.svg" alt="" />
+
+             <h2>Best in Class</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum
+              deleniti a voluptates assumenda animi doloremque nemo quo
+              distinctio facilis eaque?
+            </p>
+            <div class="subcategory-design">
+              <div class="subcategory-design-bar"></div><img src="assets/Stop icon.png" alt=""/>
+              
+            </div>
+           <h3>TimeGussr</h3>
+          </div>
+          <div class="subcategory">
+            <img class="game-logo" src="assets/timegussr-logo.svg" alt="" />
+
+             <h2>Best in Class</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum
+              deleniti a voluptates assumenda animi doloremque nemo quo
+              distinctio facilis eaque?
+            </p>
+            <div class="subcategory-design">
+              <div class="subcategory-design-bar"></div><img src="assets/Stop icon.png" alt=""/>
+              
+            </div>
+           <h3>TimeGussr</h3>
+          </div>
+          <div class="subcategory">
+            <img class="game-logo" src="assets/timegussr-logo.svg" alt="" />
+
+             <h2>Best in Class</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum
+              deleniti a voluptates assumenda animi doloremque nemo quo
+              distinctio facilis eaque?
+            </p>
+            <div class="subcategory-design">
+              <div class="subcategory-design-bar"></div><img src="assets/Stop icon.png" alt=""/>
+              
+            </div>
+           <h3>TimeGussr</h3>
+          </div>
+         
+        </div>
+      </div>
+
+  </body>
+</html>
